@@ -1,0 +1,32 @@
+managed implementation in class zbp_i_rap_template unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZI_RAP_1 alias Template
+persistent table ztb_1
+draft table ztb_1_d
+lock master total etag LocalLastChangedAt
+authorization master ( none )
+etag master LocalLastChangedAt
+{
+  create;
+  update;
+  delete;
+
+  // UUID autogenerado por el framework RAP
+  field ( readonly, numbering : managed ) Id;
+
+  // Manejo de Drafts
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for ztb_1
+  {
+    Id                 = id;
+    Description        = description;
+    LocalLastChangedAt = local_last_changed_at;
+  }
+}

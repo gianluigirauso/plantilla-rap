@@ -1,0 +1,52 @@
+@Metadata.layer: #CORE
+@UI.selectionVariant: [
+  {
+    qualifier: 'Default',
+    text: 'Registro3'
+  }
+]
+
+@UI: {
+  headerInfo: {
+    typeName: 'Resgistro1',
+    typeNamePlural: 'Registro2',
+    typeImageUrl: 'sap-icon://customer',
+    title: {
+      type: #STANDARD,
+      value: 'Description'
+    },
+    description: {
+      type: #STANDARD,
+      value: 'Description'
+    }
+  }
+}
+annotate view ZC_RAP_2 with
+{
+  @UI.facet: [
+    {
+      id: 'HeaderDescription',
+      purpose: #HEADER,
+      type: #FIELDGROUP_REFERENCE,
+      targetQualifier: 'HeaderGroup',
+      position: 10
+    },
+    {
+      id: 'MainSection',
+      purpose: #STANDARD,
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Información General',
+      position: 10
+    }
+  ]
+  @UI.hidden: true
+  Id;
+
+  @UI: {
+    lineItem:       [ { position: 10, label: 'Descripción' } ],
+    identification: [ { position: 10, label: 'Descripción' } ],
+    selectionField: [ { position: 10 } ]
+  }
+  Description;
+
+}

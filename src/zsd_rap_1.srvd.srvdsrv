@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition - rap'
+define service ZSD_rap_1 {
+  expose ZC_RAP_2 as Template;
+}
