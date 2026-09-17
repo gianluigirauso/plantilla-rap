@@ -5,7 +5,7 @@ Plantilla reutilizable y modular desarrollada en **ABAP Cloud** utilizando el mo
 ## 📸 Vista previa
 
 ### 1. List Report (Vista Principal)
-![List Report] (IMG_1958.jpeg)
+![List Report](IMG_1958.jpeg)
 
 ### 2. Object Page (Detalle y Header)
-![Object Page Header](IMG_1958.jpeg)
+![Object Page Header](IMG_1957.jpeg)
