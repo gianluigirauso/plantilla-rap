@@ -1,8 +1,8 @@
-# ABAP Cloud RAP Template - Draft Enabled
+
 
 Plantilla reutilizable y modular desarrollada en **ABAP Cloud** utilizando el modelo **RAP** Diseñada como estructura base para acelerar el desarrollo.
 
-## 📸 Vista previa
+##  Vista previa
 
 ### 1. List Report (Vista Principal)
 ![List Report](IMG_1958.jpeg)
